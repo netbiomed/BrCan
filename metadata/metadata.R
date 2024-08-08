@@ -287,6 +287,6 @@ rownames(counts_brca) <- ensg
 dim(counts_brca) # [1] 60660   842
 
 write.csv(counts_brca, "expression_matrix.csv", row.names = TRUE)
-saveRDS(metadata_tcga, "expression_matrix.RDS")
+saveRDS(counts_brca, "expression_matrix.RDS")
 
 # save.image("~/Documents/BrCanProject/metadata_image.RData")
